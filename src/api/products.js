@@ -50,12 +50,7 @@ module.exports = (app, channel) => {
     const products = await service.GetSelectedProducts(ids);
     return res.status(200).json(products);
   });
-  app.get("/whoami", (req, res, next) => {
-    return res
-      .status(200)
-      .json({ msg: "/ or /products : I am products Service" });
-  });
-
+  
   //get Top products and category
   app.get("/", async (req, res, next) => {
     //check validation
