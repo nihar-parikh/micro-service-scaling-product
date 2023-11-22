@@ -2,4 +2,4 @@ node_modules
 .env
 .env.dev
 Dockerfile
-k8s-access.pem
+k8s-access-product.pem
